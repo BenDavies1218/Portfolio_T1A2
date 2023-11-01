@@ -1,0 +1,16 @@
+// Pages
+@use "./Pages/About";
+@use "./Pages/Contact.scss";
+@use "./Pages/Home.scss";
+@use "./Pages/Projects.scss";
+
+// Components
+@use "./Components/breakpoints.scss";
+@use "./Components/colors.scss";
+@use "./Components/fonts.scss";
+@use "./Components/mixins.scss";
+@use "./Components/animation.scss";
+
+// Footer & Header
+@use "./Defaults/header.scss";
+@use "./Defaults/footer.scss";
