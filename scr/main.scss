@@ -1,16 +1,16 @@
+// Footer & Header
+@use "./Style/Defaults/header";
+@use "./Style/Defaults/footer";
+
 // Pages
-@use "./Pages/About";
-@use "./Pages/Contact.scss";
-@use "./Pages/Home.scss";
-@use "./Pages/Projects.scss";
+@use "./Style/Defaults/Home";
+@use "./Style/Defaults/About";
+@use "./Style/Defaults/Contact";
+@use "./Style/Defaults/Projects";
 
 // Components
-@use "./Components/breakpoints.scss";
-@use "./Components/colors.scss";
-@use "./Components/fonts.scss";
-@use "./Components/mixins.scss";
-@use "./Components/animation.scss";
-
-// Footer & Header
-@use "./Defaults/header.scss";
-@use "./Defaults/footer.scss";
+@use "./Style/Components/breakpoints";
+@use "./Style/Components/colors";
+@use "./Style/Components/fonts";
+@use "./Style/Components/mixins.scss";
+@use "./Style/Components/animation.scss";
