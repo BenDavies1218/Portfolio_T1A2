@@ -1,4 +1,82 @@
-body section {
-    height: 70dvh;
-    background-color: chocolate;
+@import "../Components/colors";
+
+section {
+    .main-btns {
+        background-color: #fff;
+        margin-top: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        a {
+        position: relative;
+        background: $grad-blue;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.5em;
+        letter-spacing: 0.1rem;
+        font-weight: 400;
+        padding: 10px 30px;
+        transition: 0.5s;
+        }
+
+        a:hover {
+        background: $grad-blue;
+        color: $grad-blue;
+        letter-spacing: 0.25rem;
+        box-shadow: 0 0 35px $grad-blue;
+        }
+
+        a:before {
+        content: '';
+        position: absolute;
+        inset: 2px;
+        background: #4f4f4f;
+        }
+
+        a span {
+        position: relative;
+        z-index: 1;
+        }
+    
+        a i {
+        position: relative;
+        inset: 0;
+        display: block;
+        }
+
+        a i::before {
+        content: '';
+        position: absolute;
+        top: -38px;
+        left: 90%;
+        width: 10px;
+        height: 4px;
+        background: #fff;
+        transform: translateX(-50%) skewX(325deg);
+        transition: 0.8s;
+        }
+        a:hover i::before {
+        width: 20px;
+        left: 20%;
+        }
+
+        a i::after {
+        content: '';
+        position: absolute;
+        bottom: -11px;
+        left: 10%;
+        width: 10px;
+        height: 4px;
+        background: #fff;
+        transform: translateX(-50%) skewX(325deg);
+        transition: 0.8s;
+        }
+        a:hover i::after {
+        width: 20px;
+        left: 90%;
+        }
+    }
 }

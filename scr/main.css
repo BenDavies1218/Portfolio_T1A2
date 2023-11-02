@@ -6,25 +6,99 @@ header {
 header Nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
+  gap: 5%;
 }
 header Nav .nav-btn {
-  background-color: rgb(195, 195, 195);
-  padding: 5px;
-  border-radius: 15%;
-  margin: 3dvw;
+  font-size: 1rem;
+  background-color: transparent;
+  border-color: transparent;
 }
 header Nav .nav-btn:hover {
-  background-color: grey;
+  box-shadow: 0px 0px 0px 10px #0ff;
+  text-shadow: 4px 4px 4px rgba(38, 189, 4, 0.59);
+  transform: scale(1.2);
+  translate: 0px, 10px;
 }
 header .logo-main {
   color: rgb(127, 28, 15);
-  font-family: Nabla, Cursive;
   text-align: center;
 }
+header .logo-main h2 {
+  font-family: Nabla, Cursive;
+  padding: 0px;
+  margin: 10px;
+}
 
-body section {
-  height: 70dvh;
-  background-color: chocolate;
+section .main-btns {
+  background-color: #fff;
+  margin-top: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+section .main-btns a {
+  position: relative;
+  background: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+section .main-btns a:hover {
+  background: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+  color: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+  letter-spacing: 0.25rem;
+  box-shadow: 0 0 35px radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+section .main-btns a:before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #4f4f4f;
+}
+section .main-btns a span {
+  position: relative;
+  z-index: 1;
+}
+section .main-btns a i {
+  position: relative;
+  inset: 0;
+  display: block;
+}
+section .main-btns a i::before {
+  content: "";
+  position: absolute;
+  top: -38px;
+  left: 90%;
+  width: 10px;
+  height: 4px;
+  background: #fff;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.8s;
+}
+section .main-btns a:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+section .main-btns a i::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 10%;
+  width: 10px;
+  height: 4px;
+  background: #fff;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.8s;
+}
+section .main-btns a:hover i::after {
+  width: 20px;
+  left: 90%;
 }/*# sourceMappingURL=main.css.map */
