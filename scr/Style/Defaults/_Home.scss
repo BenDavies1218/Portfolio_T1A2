@@ -1,82 +1,123 @@
 @import "../Components/colors";
 
+body {
+    background-color: $Primary-blue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+footer {
+    margin-top: auto;
+}
 section {
-    .main-btns {
-        background-color: #fff;
-        margin-top: 450px;
+    .img {
+
+        margin-top: 20vh; 
         display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        gap: 1em;
-
-        a {
-        position: relative;
-        background: $grad-blue;
-        color: #ffffff;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 1.5em;
-        letter-spacing: 0.1rem;
-        font-weight: 400;
-        padding: 10px 30px;
-        transition: 0.5s;
-        }
-
-        a:hover {
-        background: $grad-blue;
-        color: $grad-blue;
-        letter-spacing: 0.25rem;
-        box-shadow: 0 0 35px $grad-blue;
-        }
-
-        a:before {
-        content: '';
-        position: absolute;
-        inset: 2px;
-        background: #4f4f4f;
-        }
-
-        a span {
-        position: relative;
-        z-index: 1;
-        }
+        gap: 15vw;
+    }
     
-        a i {
-        position: relative;
-        inset: 0;
-        display: block;
-        }
+    .main-btns {
+    background-color: $Primary-blue;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
 
-        a i::before {
-        content: '';
-        position: absolute;
-        top: -38px;
-        left: 90%;
-        width: 10px;
-        height: 4px;
-        background: #fff;
-        transform: translateX(-50%) skewX(325deg);
-        transition: 0.8s;
-        }
-        a:hover i::before {
-        width: 20px;
-        left: 20%;
-        }
+    a {
+    position: relative;
+    background: $Secondary-grey;
+    color: $Secondary-silver;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+    }
 
-        a i::after {
-        content: '';
-        position: absolute;
-        bottom: -11px;
-        left: 10%;
-        width: 10px;
-        height: 4px;
-        background: #fff;
-        transform: translateX(-50%) skewX(325deg);
-        transition: 0.8s;
+    a:hover {
+    background: $Secondary-silver;
+    color: $Secondary-silver;
+    letter-spacing: 0.2rem;
+    box-shadow: 0 0 35px $Secondary-silver;
+    }
+
+    a:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #201e1e;
+    }
+
+    a span {
+    position: relative;
+    z-index: 1;
+    }
+
+    a i {
+    position: relative;
+    inset: 0;
+    display: block;
+    }
+
+    // upper element
+    a i::before {
+    content: '';
+    position: absolute;
+    top: -38px;
+    left: 90%;
+    width: 10px;
+    height: 4px;
+    background: $Primary-Gold;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.8s;
+    }
+    a:hover i::before {
+    width: 20px;
+    left: 20%;
+    }
+
+    //lower element
+    a i::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 10%;
+    width: 10px;
+    height: 4px;
+    background: $Primary-Gold;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.8s;
+    }
+    a:hover i::after {
+    width: 20px;
+    left: 90%;
+    }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    img {
+        transform: scale(1.2);
+        p {
+            font-size: 1rem;
         }
-        a:hover i::after {
-        width: 20px;
-        left: 90%;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    img {
+        transform: scale(1.5);
+        p {
+            font-size: 2rem;
         }
     }
 }

@@ -1,8 +1,15 @@
 //Dark colors
 $Primary-black: #231f20;
-
+$Primary-blue: #0F2143;
+$Primary-Green: #43573E;
+$Primary-Gold: #8B6212;
+$Primary-Lightblue: #354E56; 
 
 //Secondary colors
+$Secondary-grey: rgb(73, 73, 73)(128, 128, 128, 0.164);
+$Secondary-orange: #E07A5F; 
+$Secondary-silver: #E4E4DE; 
+$Secondary-lightblue: #A9D6E5;
 
 //terctiary
 $blue-btn: rgb(30, 30, 99);
@@ -10,7 +17,5 @@ $red-btn: rgb(209, 0, 0);
 $pink-btn: rgb(240, 26, 136);
 $grad-blue: radial-gradient(circle, #5c0067 0%, #00d4ff 100%); 
 
-//fonts-light
-
-//fonts-dark
-
+//fonts
+$Font-black: #1B1B1B;

@@ -1,49 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nabla&display=swap");
+body {
+  margin: -10px 0px 0px 0px;
+}
+
 header {
+  width: 100vw;
   height: 100px;
-  background-color: aqua;
+  background-color: #43573E;
+  border-bottom: 5px solid #8B6212;
 }
 header Nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  gap: 5%;
+  gap: 3vw;
 }
 header Nav .nav-btn {
-  font-size: 1rem;
+  font-size: 1em;
+  color: #fff;
   background-color: transparent;
   border-color: transparent;
 }
 header Nav .nav-btn:hover {
-  box-shadow: 0px 0px 0px 10px #0ff;
-  text-shadow: 4px 4px 4px rgba(38, 189, 4, 0.59);
-  transform: scale(1.2);
-  translate: 0px, 10px;
+  transform: scale(1.2) translate(0px, -5px);
+  text-decoration: underline;
+  cursor: pointer;
 }
 header .logo-main {
-  color: rgb(127, 28, 15);
+  background-color: #43573E;
   text-align: center;
 }
-header .logo-main h2 {
+header .logo-main h1 {
   font-family: Nabla, Cursive;
   padding: 0px;
   margin: 10px;
 }
+@media only screen and (min-width: 768px) {
+  header Nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15vw;
+  }
+  header Nav .nav-btn {
+    font-size: 1.5em;
+  }
+}
 
-section .main-btns {
-  background-color: #fff;
-  margin-top: 450px;
+.container {
+  width: 100dvw;
+  height: 100px;
+  background-color: #43573E;
+}
+body {
+  background-color: #0F2143;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+section .img {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 1em;
+  gap: 15vw;
+}
+section .main-btns {
+  background-color: #0F2143;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
 }
 section .main-btns a {
   position: relative;
-  background: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
-  color: #ffffff;
-  text-transform: uppercase;
+  background: rgb(73, 73, 73) 128, 128, 128, 0.164;
+  color: #E4E4DE;
   text-decoration: none;
   font-size: 1.5em;
   letter-spacing: 0.1rem;
@@ -52,16 +93,16 @@ section .main-btns a {
   transition: 0.5s;
 }
 section .main-btns a:hover {
-  background: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
-  color: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
-  letter-spacing: 0.25rem;
-  box-shadow: 0 0 35px radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+  background: #E4E4DE;
+  color: #E4E4DE;
+  letter-spacing: 0.2rem;
+  box-shadow: 0 0 35px #E4E4DE;
 }
 section .main-btns a:before {
   content: "";
   position: absolute;
   inset: 2px;
-  background: #4f4f4f;
+  background: #201e1e;
 }
 section .main-btns a span {
   position: relative;
@@ -79,7 +120,7 @@ section .main-btns a i::before {
   left: 90%;
   width: 10px;
   height: 4px;
-  background: #fff;
+  background: #8B6212;
   transform: translateX(-50%) skewX(325deg);
   transition: 0.8s;
 }
@@ -94,11 +135,28 @@ section .main-btns a i::after {
   left: 10%;
   width: 10px;
   height: 4px;
-  background: #fff;
+  background: #8B6212;
   transform: translateX(-50%) skewX(325deg);
   transition: 0.8s;
 }
 section .main-btns a:hover i::after {
   width: 20px;
   left: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    transform: scale(1.2);
+  }
+  img p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 980px) {
+  img {
+    transform: scale(1.5);
+  }
+  img p {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
