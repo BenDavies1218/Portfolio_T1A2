@@ -14,7 +14,7 @@ footer {
 section {
     .img {
 
-        margin-top: 20vh; 
+        margin-top: 5vh; 
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
@@ -108,16 +108,14 @@ section {
     img {
         transform: scale(1.2);
         p {
-            font-size: 1rem;
+            font-size: 32px;
         }
     }
 }
 
 @media only screen and (min-width: 980px) {
     img {
+        margin-top: 5vh;
         transform: scale(1.5);
-        p {
-            font-size: 2rem;
-        }
     }
 }

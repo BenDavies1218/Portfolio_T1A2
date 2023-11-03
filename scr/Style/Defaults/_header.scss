@@ -6,7 +6,7 @@ body {
 
 header {
     width: 100vw;
-    height: 100px;
+    height: 150px;
     background-color: $Primary-Green;
     border-bottom: 5px solid $Primary-Gold;
 
@@ -18,22 +18,24 @@ header {
         
 
         .nav-btn {
-            font-size: 1em;
+            font-size: 1.2em;
             color: #fff;
             background-color: transparent;
             border-color: transparent;
+            text-decoration: none;
+            margin: 15px 10px;
         }
 
         .nav-btn:hover {
-            transform: scale(1.2) translate(0px, -5px); 
+            transform: scale(1.2) translate(0px, -5px);
             text-decoration: underline;
-            cursor: pointer;
         }
     }
     
     .logo-main {
         background-color: $Primary-Green;
         text-align: center;
+        padding-top: 20px;
         h1 {
             font-family: Nabla, Cursive;
             padding: 0px;

@@ -5,7 +5,7 @@ body {
 
 header {
   width: 100vw;
-  height: 100px;
+  height: 150px;
   background-color: #43573E;
   border-bottom: 5px solid #8B6212;
 }
@@ -16,19 +16,21 @@ header Nav {
   gap: 3vw;
 }
 header Nav .nav-btn {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #fff;
   background-color: transparent;
   border-color: transparent;
+  text-decoration: none;
+  margin: 15px 10px;
 }
 header Nav .nav-btn:hover {
   transform: scale(1.2) translate(0px, -5px);
   text-decoration: underline;
-  cursor: pointer;
 }
 header .logo-main {
   background-color: #43573E;
   text-align: center;
+  padding-top: 20px;
 }
 header .logo-main h1 {
   font-family: Nabla, Cursive;
@@ -65,7 +67,7 @@ footer {
 }
 
 section .img {
-  margin-top: 20vh;
+  margin-top: 5vh;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -149,14 +151,12 @@ section .main-btns a:hover i::after {
     transform: scale(1.2);
   }
   img p {
-    font-size: 1rem;
+    font-size: 32px;
   }
 }
 @media only screen and (min-width: 980px) {
   img {
+    margin-top: 5vh;
     transform: scale(1.5);
-  }
-  img p {
-    font-size: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
