@@ -2,7 +2,7 @@
 
 header {
     width: 100vw;
-    height: 150px;
+    height: 100px;
     background-color: $Primary-Green;
     border-bottom: 5px solid $Primary-Gold;
 
@@ -10,7 +10,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 3vw;    
+        gap: 8vw;    
         
 
         .nav-btn {
@@ -19,7 +19,6 @@ header {
             background-color: transparent;
             border-color: transparent;
             text-decoration: none;
-            margin: 15px 10px;
         }
 
         .nav-btn:hover {
@@ -31,7 +30,6 @@ header {
     .logo-main {
         background-color: $Primary-Green;
         text-align: center;
-        padding-top: 20px;
         h1 {
             font-family: Nabla, Cursive;
             padding: 0px;

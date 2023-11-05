@@ -6,6 +6,7 @@
     <title>Benjamin Davies</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./scr/main.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
                 <span>Download CV</span>
                 <i></i>
             </a>
-            <a href="Contact.html">
+            <a class="lhac" href="#Contact-form">
                 <span>Lets have a chat</span>
                 <i></i>
             </a>
@@ -42,7 +43,7 @@
                 <img src="./scr/Images/ordering.jpg" alt="menu-ordering-app">
                 <p>Check out my lastest projects!</p>
                 <a href="./scr/Pages/Projects.html">
-                    <button>Click Here</button>
+                    <button>View Projects</button>
                 </a>
             </article>
             <article>
@@ -50,7 +51,7 @@
                 <img class="lang" src="./scr/Images/languages.png" alt="tech-experience" >
                 <p>See why people prefer me over the rest. </p>
                 <a href="./scr/Pages/About.html">
-                    <button>Click Here</button>
+                    <button>View Technical</button>
                 </a>
             </article>
             <article>
@@ -58,19 +59,24 @@
                 <img src="./scr/Images/feedback.jpg" alt="client-feedback">
                 <p>See what my previous clients have to say. </p>
                 <a href="./scr/Pages/Services.html">
-                    <button>Click Here</button>
+                    <button>View Client Feedback</button>
                 </a>
             </article>
         </div>
-        <div class="contact-container">
+        <div class="contact-container" id="Contact-form">
             <form class="Contact-form">
                 <h1>Contact Me</h1>
-                <input type="text" name="" id="Name" placeholder="Name">
-                <input type="text" name="" id="email" placeholder="Email">
+                <input type="text" id="Name" placeholder="Name">
+                <input type="text" id="email" placeholder="Email">
                 <input type="text" name="" id="Company" placeholder="Company / Business">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Brief descprition of Services required"></textarea>
-                <button>Submit</button>
+                <textarea name="" id="" cols="20" rows="10" placeholder="Brief descprition of Services required"></textarea>
+                <button class="submit">Submit</button>
             </form>
+        </div>
+        <div class="btt">
+            <a class="back-to-top" href="#top">Back To Top
+                <i class="fa-solid fa-arrow-up fa-bounce"></i>
+            </a>
         </div>
     </Section>
     <Footer>

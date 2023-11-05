@@ -1,7 +1,9 @@
 @import "../Components/colors";
-
+html {
+    scroll-behavior: smooth;
+}
 body {
-    background-color: $Primary-blue;
+    background-color: $Primary-Lightblue;
     max-width: 100dvw;
     height: fit-content;
     display: flex;
@@ -10,22 +12,60 @@ body {
     padding: 0px;
 
     section {
+        .btt {
+            display: absolute;
+            text-align: center;
+            width: 46px;
+            height: 50px;
+            color: $Secondary-silver;
+            transform: translate(80vw, -10vh);
+                i {
+                    color: black;
+                }
+
+            &:visited {
+                text-decoration: none;
+                color: $Font-black;
+            }
+        }
         .contact-container {
             width: 100dvw;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(1, 1fr);
+            display: flex;
+            justify-content: center;
             
             .Contact-form {
-                text-align: left;
-                width: 200px;
-                grid-column: 3 / 3;
-                grid-row: 1 / -1;
+                text-align: center;
+                width: 400px;
+                max-width: 90vw;
+                margin-bottom: 20px;
+                * {
+                    font-size: 24px;
+                    margin: 10px;
+                }
+                button {
+                    position: relative;
+                    background-color: #201e1e;
+                    color: $Secondary-silver;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    letter-spacing: 0.1rem;
+                    font-weight: 400;
+                    padding: 10px 30px;
+                    opacity: 0.7;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background: $Secondary-grey;
+                        letter-spacing: 0.2rem;
+                        opacity: 1;
+                        transform: scale(1.1);
+                    }
+                }
             }
         }
 
         .article-container {
-            margin-top: 50px;
+            margin-top: 20vh;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -34,6 +74,27 @@ body {
             article {
                 text-align: center;
                 margin-bottom: 50px;
+
+                a button {
+                    position: relative;
+                    background-color: #201e1e;
+                    color: $Secondary-silver;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    letter-spacing: 0.1rem;
+                    font-weight: 400;
+                    padding: 10px 30px;
+                    opacity: 0.7;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background: $Secondary-grey;
+                        letter-spacing: 0.2rem;
+                        opacity: 1;
+                        transform: scale(1.1);
+                        box-shadow: 0 0 35px $Secondary-silver;
+                    }
+                }
                 h3 {
                     color: $Secondary-silver;
                     font-size: 32px;
@@ -53,17 +114,20 @@ body {
         }
 
         .img {
-            margin: 5vh 5vw; 
+            margin: 5vw; 
             max-width: 90dvw;
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15vw;
+
+            @media only screen and (min-width: 768px) {
+            gap: 20vh;
+            }
+    
         }
 
         h1 {
-            align-self: center;
             text-align: center;
             font-size: 32px;
             max-width: 500px;
@@ -82,8 +146,7 @@ body {
         }
     
         .main-btns {
-            background-color: $Primary-blue;
-            margin-top: 5vh;
+            background-color: $Primary-Lightblue;
             margin-bottom: 5vh;
             display: flex;
             flex-wrap: wrap;
@@ -166,6 +229,7 @@ body {
         @media only screen and (min-width: 768px) {
             margin-top: 25vh;
             }
+
         }
     
     }

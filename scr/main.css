@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 header {
   width: 100vw;
-  height: 150px;
+  height: 100px;
   background-color: #43573E;
   border-bottom: 5px solid #8B6212;
 }
@@ -12,7 +12,7 @@ header Nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3vw;
+  gap: 8vw;
 }
 header Nav .nav-btn {
   font-size: 1.2em;
@@ -20,7 +20,6 @@ header Nav .nav-btn {
   background-color: transparent;
   border-color: transparent;
   text-decoration: none;
-  margin: 15px 10px;
 }
 header Nav .nav-btn:hover {
   transform: scale(1.2) translate(0px, -5px);
@@ -29,7 +28,6 @@ header Nav .nav-btn:hover {
 header .logo-main {
   background-color: #43573E;
   text-align: center;
-  padding-top: 20px;
 }
 header .logo-main h1 {
   font-family: Nabla, Cursive;
@@ -54,8 +52,12 @@ header .logo-main h1 {
   background-color: #43573E;
   border-top: 5px solid #8B6212;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #0F2143;
+  background-color: #354E56;
   max-width: 100dvw;
   height: -moz-fit-content;
   height: fit-content;
@@ -64,20 +66,56 @@ body {
   margin: 0px;
   padding: 0px;
 }
+body section .btt {
+  display: absolute;
+  text-align: center;
+  width: 46px;
+  height: 50px;
+  color: #E4E4DE;
+  transform: translate(80vw, -10vh);
+}
+body section .btt i {
+  color: black;
+}
+body section .btt:visited {
+  text-decoration: none;
+  color: #1B1B1B;
+}
 body section .contact-container {
   width: 100dvw;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  display: flex;
+  justify-content: center;
 }
 body section .contact-container .Contact-form {
-  text-align: left;
-  width: 200px;
-  grid-column: 3/3;
-  grid-row: 1/-1;
+  text-align: center;
+  width: 400px;
+  max-width: 90vw;
+  margin-bottom: 20px;
+}
+body section .contact-container .Contact-form * {
+  font-size: 24px;
+  margin: 10px;
+}
+body section .contact-container .Contact-form button {
+  position: relative;
+  background-color: #201e1e;
+  color: #E4E4DE;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  padding: 10px 30px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+body section .contact-container .Contact-form button:hover {
+  background: rgb(73, 73, 73) 128, 128, 128, 0.164;
+  letter-spacing: 0.2rem;
+  opacity: 1;
+  transform: scale(1.1);
 }
 body section .article-container {
-  margin-top: 50px;
+  margin-top: 20vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -86,6 +124,25 @@ body section .article-container {
 body section .article-container article {
   text-align: center;
   margin-bottom: 50px;
+}
+body section .article-container article a button {
+  position: relative;
+  background-color: #201e1e;
+  color: #E4E4DE;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  padding: 10px 30px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+body section .article-container article a button:hover {
+  background: rgb(73, 73, 73) 128, 128, 128, 0.164;
+  letter-spacing: 0.2rem;
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 0 35px #E4E4DE;
 }
 body section .article-container article h3 {
   color: #E4E4DE;
@@ -102,16 +159,19 @@ body section .article-container article img {
   }
 }
 body section .img {
-  margin: 5vh 5vw;
+  margin: 5vw;
   max-width: 90dvw;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15vw;
+}
+@media only screen and (min-width: 768px) {
+  body section .img {
+    gap: 20vh;
+  }
 }
 body section h1 {
-  align-self: center;
   text-align: center;
   font-size: 32px;
   max-width: 500px;
@@ -127,8 +187,7 @@ body section p {
   text-align: center;
 }
 body section .main-btns {
-  background-color: #0F2143;
-  margin-top: 5vh;
+  background-color: #354E56;
   margin-bottom: 5vh;
   display: flex;
   flex-wrap: wrap;
