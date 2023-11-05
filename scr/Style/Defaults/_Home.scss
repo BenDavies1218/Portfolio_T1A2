@@ -2,34 +2,40 @@
 
 body {
     background-color: $Primary-blue;
-    width: 100vw;
+    width: 100dvw;
     height: fit-content;
     display: flex;
     flex-direction: column;
+    margin: 0px 0px;
+    padding: auto;
 
     section {
-        
         .article-container {
             margin-top: 300px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
 
             article {
+                text-align: center;
+                margin-bottom: 50px;
                 h3 {
-                    text-align: center;
                     color: $Secondary-silver;
                     font-size: 32px;
                 }
+                
                 img {
-                    max-width: 300px;
+                    max-width: 250px;
                     height: auto;
-                    margin-bottom: 300px;
+                    margin-bottom: 2vh;
+                
+
+                @media only screen and (min-width: 768px) {
+                    margin-bottom: 50px;
+                    }
                 }
             }
-
-            
         }
 
         .img {
@@ -39,13 +45,13 @@ body {
             flex-direction: row-reverse;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15vw;
+            gap: 8vw;
         }
 
         h1 {
             text-align: center;
-            font-size: 34px;
-            font-family: Curtive, cursive;
+            font-size: 24px;
+            font-family: Cutive, cursive;
             color: $Secondary-silver;
         }
 
@@ -55,13 +61,12 @@ body {
     
         .main-btns {
             background-color: $Primary-blue;
-            margin-top: 15vh;
-            margin-bottom: 15vh;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 2em;
-        
 
             a {
                 position: relative;
@@ -135,16 +140,16 @@ body {
                 width: 20px;
                 left: 90%;
             }
+        
+        @media only screen and (min-width: 768px) {
+            margin-top: 25vh;
+        }
         }
     }
     
     footer {
         margin-top: auto;
     }
-}
-
-.article-container {
-    display: flex;
 }
 
 @media only screen and (min-width: 768px) {
@@ -156,7 +161,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1050px) {
     img {
         margin-top: 5vh;
         transform: scale(1.5);

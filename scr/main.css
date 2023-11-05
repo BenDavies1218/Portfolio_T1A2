@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nabla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive&family=Vast+Shadow&display=swap");
-body {
-  margin: -10px 0px 0px 0px;
-}
-
 header {
   width: 100vw;
   height: 150px;
@@ -58,28 +54,38 @@ header .logo-main h1 {
 }
 body {
   background-color: #0F2143;
-  width: 100vw;
+  width: 100dvw;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
+  margin: 0px 0px;
+  padding: auto;
 }
 body section .article-container {
   margin-top: 300px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
-body section .article-container article h3 {
+body section .article-container article {
   text-align: center;
+  margin-bottom: 50px;
+}
+body section .article-container article h3 {
   color: #E4E4DE;
   font-size: 32px;
 }
 body section .article-container article img {
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
-  margin-bottom: 300px;
+  margin-bottom: 2vh;
+}
+@media only screen and (min-width: 768px) {
+  body section .article-container article img {
+    margin-bottom: 50px;
+  }
 }
 body section .img {
   margin: 5vh 5vw;
@@ -88,12 +94,12 @@ body section .img {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15vw;
+  gap: 8vw;
 }
 body section h1 {
   text-align: center;
-  font-size: 34px;
-  font-family: Curtive, cursive;
+  font-size: 24px;
+  font-family: Cutive, cursive;
   color: #E4E4DE;
 }
 body section p {
@@ -101,8 +107,8 @@ body section p {
 }
 body section .main-btns {
   background-color: #0F2143;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -170,12 +176,13 @@ body section .main-btns a:hover i::after {
   width: 20px;
   left: 90%;
 }
+@media only screen and (min-width: 768px) {
+  body section .main-btns {
+    margin-top: 25vh;
+  }
+}
 body footer {
   margin-top: auto;
-}
-
-.article-container {
-  display: flex;
 }
 
 @media only screen and (min-width: 768px) {
@@ -186,7 +193,7 @@ body footer {
     font-size: 32px;
   }
 }
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1050px) {
   img {
     margin-top: 5vh;
     transform: scale(1.5);
