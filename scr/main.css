@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nabla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive&family=Vast+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 header {
   width: 100vw;
   height: 150px;
@@ -51,19 +52,32 @@ header .logo-main h1 {
   width: 100dvw;
   height: 100px;
   background-color: #43573E;
+  border-top: 5px solid #8B6212;
 }
 body {
   background-color: #0F2143;
-  width: 100dvw;
+  max-width: 100dvw;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  margin: 0px 0px;
-  padding: auto;
+  margin: 0px;
+  padding: 0px;
+}
+body section .contact-container {
+  width: 100dvw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+body section .contact-container .Contact-form {
+  text-align: left;
+  width: 200px;
+  grid-column: 3/3;
+  grid-row: 1/-1;
 }
 body section .article-container {
-  margin-top: 300px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -94,13 +108,20 @@ body section .img {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8vw;
+  gap: 15vw;
 }
 body section h1 {
+  align-self: center;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
+  max-width: 500px;
   font-family: Cutive, cursive;
   color: #E4E4DE;
+}
+body section h1 p {
+  margin-top: 2vh;
+  font-size: 16px;
+  font-family: kanit, cersive;
 }
 body section p {
   text-align: center;
@@ -181,7 +202,8 @@ body section .main-btns a:hover i::after {
     margin-top: 25vh;
   }
 }
-body footer {
+
+footer {
   margin-top: auto;
 }
 
@@ -197,5 +219,10 @@ body footer {
   img {
     margin-top: 5vh;
     transform: scale(1.5);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .article-container {
+    margin-top: 300px;
   }
 }/*# sourceMappingURL=main.css.map */
