@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive&family=Vast+Shadow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 header {
-  width: 100vw;
+  width: 100dvw;
   height: 100px;
+  padding: 0px;
+  margin: 0px;
   background-color: #43573E;
   border-bottom: 5px solid #8B6212;
 }
@@ -58,6 +60,7 @@ html {
 
 body {
   background-color: #354E56;
+  box-sizing: border-box;
   max-width: 100dvw;
   height: -moz-fit-content;
   height: fit-content;
@@ -67,22 +70,34 @@ body {
   padding: 0px;
 }
 body section .btt {
-  display: absolute;
-  text-align: center;
-  width: 46px;
+  width: 80vw;
   height: 50px;
   color: #E4E4DE;
-  transform: translate(80vw, -10vh);
+  margin-bottom: 50px;
+  text-align: center;
 }
-body section .btt i {
-  color: black;
+body section .btt a img {
+  width: 10px;
+  padding-bottom: 0px;
 }
-body section .btt:visited {
+@media only screen and (min-width: 1040px) {
+  body section .btt a img {
+    padding-bottom: 20px;
+  }
+}
+body section .btt .back-to-top {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2vw;
+}
+body section .btt a:visited {
   text-decoration: none;
   color: #1B1B1B;
 }
 body section .contact-container {
-  width: 100dvw;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
