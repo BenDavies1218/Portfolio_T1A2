@@ -14,27 +14,32 @@ body {
 
     section {
         .btt {
-
             width: 80vw;
             height: 50px;
             color: $Secondary-silver;
             margin-bottom: 50px;
             text-align: center;
-            a img {
-                width: 10px;
-                padding-bottom: 0px;
 
-            @media only screen and (min-width: 1040px) {
-                padding-bottom: 20px;
-            }
-            }
+            
 
             .back-to-top {
                 display: flex;
-                justify-content: flex-start;
-                flex-direction: row-reverse;
+                justify-content: flex-end;
                 align-items: center;
-                gap: 2vw;
+                gap: 1vw;
+                text-decoration: none;
+                &:hover {
+                    span {
+                        animation-name: arrow;
+                        animation-duration: 1.5s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+
+                span {
+                    font-size: 24px;
+                    visibility: hidden;
+                }
             }
 
             
@@ -90,7 +95,10 @@ body {
             article {
                 text-align: center;
                 margin-bottom: 50px;
-
+                p {
+                    color: $Secondary-silver;
+                    font-size: 24px;
+                }
                 a button {
                     position: relative;
                     background-color: #201e1e;

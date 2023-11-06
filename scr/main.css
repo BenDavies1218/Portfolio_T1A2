@@ -76,21 +76,21 @@ body section .btt {
   margin-bottom: 50px;
   text-align: center;
 }
-body section .btt a img {
-  width: 10px;
-  padding-bottom: 0px;
-}
-@media only screen and (min-width: 1040px) {
-  body section .btt a img {
-    padding-bottom: 20px;
-  }
-}
 body section .btt .back-to-top {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
-  gap: 2vw;
+  gap: 1vw;
+  text-decoration: none;
+}
+body section .btt .back-to-top:hover span {
+  animation-name: arrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+body section .btt .back-to-top span {
+  font-size: 24px;
+  visibility: hidden;
 }
 body section .btt a:visited {
   text-decoration: none;
@@ -139,6 +139,10 @@ body section .article-container {
 body section .article-container article {
   text-align: center;
   margin-bottom: 50px;
+}
+body section .article-container article p {
+  color: #E4E4DE;
+  font-size: 24px;
 }
 body section .article-container article a button {
   position: relative;
@@ -298,5 +302,31 @@ footer {
 @media only screen and (min-width: 768px) {
   .article-container {
     margin-top: 300px;
+  }
+}
+@keyframes arrow {
+  0% {
+    visibility: visible;
+  }
+  10% {
+    transform: translate(0px, -20px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(0px, -10px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -5px);
+  }
+  60% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }/*# sourceMappingURL=main.css.map */
