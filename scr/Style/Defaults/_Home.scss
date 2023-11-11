@@ -106,7 +106,7 @@ body {
                     color: $Secondary-silver;
                     font-size: 24px;
                 }
-                a button {
+                a {
                     position: relative;
                     background-color: #201e1e;
                     color: $Secondary-silver;
@@ -263,53 +263,6 @@ body {
 
         }
     
-    }
-}    
-    
-Footer {
-    margin-top: auto;
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    background-color: $Primary-Green;
-    
-    .container {
-        .copywrite {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            text-align: center;
-            background-color: $Primary-Green;
-        }
-        .social-links {
-            margin: 20px 0px -15px 0px;
-            display: flex;
-            flex-direction: row-reverse;
-            gap: 5vw;
-            align-items: center;
-            justify-content: space-evenly;
-
-            a {
-                font-family: cutive;
-                text-decoration: none;
-                color: $Secondary-silver;
-                font-size: 24px;
-                display: flex;
-                flex-direction:column-reverse;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-
-                @media only screen and (max-width: 768px) {
-                    font-size: 16px; 
-                }
-
-                i {
-                    transform:scale(1.5);
-                }
-            }
-        }
     }
 }
 

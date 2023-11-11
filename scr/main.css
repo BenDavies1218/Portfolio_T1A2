@@ -18,7 +18,7 @@ header Nav {
 }
 header Nav .nav-btn {
   font-size: 1.2em;
-  color: #fff;
+  color: #E4E4DE;
   background-color: transparent;
   border-color: transparent;
   text-decoration: none;
@@ -48,12 +48,52 @@ header .logo-main h1 {
   }
 }
 
-.container {
+Footer {
+  margin-top: auto;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
   width: 100dvw;
   height: 100px;
   background-color: #43573E;
   border-top: 5px solid #8B6212;
 }
+Footer .container .copywrite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  background-color: #43573E;
+}
+Footer .container .social-links {
+  margin: 20px 0px -15px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+Footer .container .social-links a {
+  font-family: cutive;
+  text-decoration: none;
+  color: #E4E4DE;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  Footer .container .social-links a {
+    font-size: 16px;
+  }
+}
+Footer .container .social-links a i {
+  transform: scale(1.5);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -151,7 +191,7 @@ body section .article-container article p {
   color: #E4E4DE;
   font-size: 24px;
 }
-body section .article-container article a button {
+body section .article-container article a {
   position: relative;
   background-color: #201e1e;
   color: #E4E4DE;
@@ -163,7 +203,7 @@ body section .article-container article a button {
   opacity: 0.7;
   transition: 0.5s;
 }
-body section .article-container article a button:hover {
+body section .article-container article a:hover {
   background: rgb(73, 73, 73) 128, 128, 128, 0.164;
   letter-spacing: 0.2rem;
   opacity: 1;
@@ -288,49 +328,6 @@ body section .main-btns a:hover i::after {
   }
 }
 
-Footer {
-  margin-top: auto;
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-  background-color: #43573E;
-}
-Footer .container .copywrite {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  text-align: center;
-  background-color: #43573E;
-}
-Footer .container .social-links {
-  margin: 20px 0px -15px 0px;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 5vw;
-  align-items: center;
-  justify-content: space-evenly;
-}
-Footer .container .social-links a {
-  font-family: cutive;
-  text-decoration: none;
-  color: #E4E4DE;
-  font-size: 24px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-@media only screen and (max-width: 768px) {
-  Footer .container .social-links a {
-    font-size: 16px;
-  }
-}
-Footer .container .social-links a i {
-  transform: scale(1.5);
-}
-
 @media only screen and (min-width: 768px) {
   img {
     transform: scale(1.2);
@@ -356,65 +353,68 @@ section {
   height: fit-content;
 }
 section .title {
-  width: 100vw;
   display: flex;
   justify-content: center;
 }
-section .HTML {
+section .title h1 {
+  text-align: center;
+}
+section .techcontent {
   width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 100px);
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-section .HTML h2 {
+section .techcontent .HTML {
   text-align: center;
-  grid-column: 2;
-  grid-row: 1;
 }
-section .HTML p {
+section .techcontent .HTML p {
+  color: #E4E4DE;
+}
+section .techcontent pre {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  overflow: auto;
+}
+section .techcontent .anchors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+section .techcontent .SCSS {
+  margin-top: 100px;
   text-align: center;
-  grid-column: 2;
-  grid-row: 2;
 }
-section .HTML code {
-  text-align: left;
-  transform: translate(-25%);
-  grid-column: 2;
-  grid-row: 3/5;
+section .techcontent .SCSS p {
+  color: #E4E4DE;
 }
-section .SCSS {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(5, 100px);
+section .techcontent .style-anchors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vw;
 }
-section .SCSS .Htmlexample {
-  grid-column: 2/5;
-  grid-row: 3/6;
+section .techcontent .style-anchors a {
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  color: black;
+  background-color: rgb(104, 104, 255);
+  border: 1px solid black;
+  box-shadow: 5px 5px 0px 1px rgba(242, 235, 110, 0.7), 5px 5px 0 2px black;
+  opacity: 0.8;
+  transition: 0.1s;
 }
-section .SCSS .Htmlexample .box {
-  position: relative;
-  height: 200px;
-  background-color: black;
-  border: 3px solid green;
-}
-section .SCSS .Htmlexample .box .ball1 {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: red;
-}
-section .SCSS .Htmlexample .box .ball2 {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: red;
-}
-section .SCSS .Htmlexample .box .ball3 {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: red;
+section .techcontent .style-anchors a:hover {
+  opacity: 1;
+  transform: translate(10px, 10px);
+  box-shadow: none;
 }
 
 @keyframes arrow {
