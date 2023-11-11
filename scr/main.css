@@ -69,6 +69,11 @@ body {
   margin: 0px;
   padding: 0px;
 }
+body section {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 body section .btt {
   width: 80vw;
   height: 50px;
@@ -283,8 +288,47 @@ body section .main-btns a:hover i::after {
   }
 }
 
-footer {
+Footer {
   margin-top: auto;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background-color: #43573E;
+}
+Footer .container .copywrite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  background-color: #43573E;
+}
+Footer .container .social-links {
+  margin: 20px 0px -15px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+Footer .container .social-links a {
+  font-family: cutive;
+  text-decoration: none;
+  color: #E4E4DE;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  Footer .container .social-links a {
+    font-size: 16px;
+  }
+}
+Footer .container .social-links a i {
+  transform: scale(1.5);
 }
 
 @media only screen and (min-width: 768px) {
