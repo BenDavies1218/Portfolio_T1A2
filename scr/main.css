@@ -109,19 +109,19 @@ body {
   margin: 0px;
   padding: 0px;
 }
-body section {
+body section.main-page {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
-body section .btt {
+body section.main-page .btt {
   width: 80vw;
   height: 50px;
   color: #E4E4DE;
   margin-bottom: 50px;
   text-align: center;
 }
-body section .btt .back-to-top {
+body section.main-page .btt .back-to-top {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -129,35 +129,35 @@ body section .btt .back-to-top {
   color: #1B1B1B;
   text-decoration: none;
 }
-body section .btt .back-to-top:hover span {
+body section.main-page .btt .back-to-top:hover span {
   animation-name: arrow;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
-body section .btt .back-to-top span {
+body section.main-page .btt .back-to-top span {
   font-size: 24px;
   visibility: hidden;
 }
-body section .btt a:visited {
+body section.main-page .btt a:visited {
   text-decoration: none;
   color: #1B1B1B;
 }
-body section .contact-container {
+body section.main-page .contact-container {
   width: 100vw;
   display: flex;
   justify-content: center;
 }
-body section .contact-container .Contact-form {
+body section.main-page .contact-container .Contact-form {
   text-align: center;
   width: 400px;
   max-width: 90vw;
   margin: 100px 0px 20px 0px;
 }
-body section .contact-container .Contact-form * {
-  font-size: 24px;
+body section.main-page .contact-container .Contact-form * {
+  font-size: 16px;
   margin: 10px;
 }
-body section .contact-container .Contact-form button {
+body section.main-page .contact-container .Contact-form button {
   position: relative;
   background-color: #201e1e;
   color: #E4E4DE;
@@ -169,29 +169,29 @@ body section .contact-container .Contact-form button {
   opacity: 0.7;
   transition: 0.5s;
 }
-body section .contact-container .Contact-form button:hover {
+body section.main-page .contact-container .Contact-form button:hover {
   background: rgb(73, 73, 73) 128, 128, 128, 0.164;
   letter-spacing: 0.2rem;
   opacity: 1;
   transform: scale(1.1);
   box-shadow: 0 0 35px #E4E4DE;
 }
-body section .article-container {
+body section.main-page .article-container {
   margin-top: 20vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
-body section .article-container article {
+body section.main-page .article-container article {
   text-align: center;
   margin-bottom: 50px;
 }
-body section .article-container article p {
+body section.main-page .article-container article p {
   color: #E4E4DE;
   font-size: 24px;
 }
-body section .article-container article a {
+body section.main-page .article-container article a {
   position: relative;
   background-color: #201e1e;
   color: #E4E4DE;
@@ -203,28 +203,28 @@ body section .article-container article a {
   opacity: 0.7;
   transition: 0.5s;
 }
-body section .article-container article a:hover {
+body section.main-page .article-container article a:hover {
   background: rgb(73, 73, 73) 128, 128, 128, 0.164;
   letter-spacing: 0.2rem;
   opacity: 1;
   transform: scale(1.1);
   box-shadow: 0 0 35px #E4E4DE;
 }
-body section .article-container article h3 {
+body section.main-page .article-container article h3 {
   color: #E4E4DE;
   font-size: 32px;
 }
-body section .article-container article img {
+body section.main-page .article-container article img {
   max-width: 250px;
   height: auto;
   margin-bottom: 2vh;
 }
 @media only screen and (min-width: 768px) {
-  body section .article-container article img {
+  body section.main-page .article-container article img {
     margin-bottom: 50px;
   }
 }
-body section .img {
+body section.main-page .img {
   margin: 5vw;
   max-width: 90dvw;
   display: flex;
@@ -233,26 +233,26 @@ body section .img {
   justify-content: center;
 }
 @media only screen and (min-width: 768px) {
-  body section .img {
+  body section.main-page .img {
     gap: 20vh;
   }
 }
-body section h1 {
+body section.main-page h1 {
   text-align: center;
   font-size: 32px;
   max-width: 500px;
   font-family: Cutive, cursive;
   color: #E4E4DE;
 }
-body section h1 p {
+body section.main-page h1 p {
   margin-top: 2vh;
   font-size: 16px;
   font-family: kanit, cersive;
 }
-body section p {
+body section.main-page p {
   text-align: center;
 }
-body section .main-btns {
+body section.main-page .main-btns {
   background-color: #354E56;
   margin-bottom: 5vh;
   display: flex;
@@ -260,7 +260,7 @@ body section .main-btns {
   justify-content: center;
   gap: 2em;
 }
-body section .main-btns a {
+body section.main-page .main-btns a {
   position: relative;
   background: rgb(73, 73, 73) 128, 128, 128, 0.164;
   color: #E4E4DE;
@@ -271,28 +271,28 @@ body section .main-btns a {
   padding: 10px 30px;
   transition: 0.5s;
 }
-body section .main-btns a:hover {
+body section.main-page .main-btns a:hover {
   background: #E4E4DE;
   color: #E4E4DE;
   letter-spacing: 0.2rem;
   box-shadow: 0 0 35px #E4E4DE;
 }
-body section .main-btns a:before {
+body section.main-page .main-btns a:before {
   content: "";
   position: absolute;
   inset: 2px;
   background: #201e1e;
 }
-body section .main-btns a span {
+body section.main-page .main-btns a span {
   position: relative;
   z-index: 1;
 }
-body section .main-btns a i {
+body section.main-page .main-btns a i {
   position: relative;
   inset: 0;
   display: block;
 }
-body section .main-btns a i::before {
+body section.main-page .main-btns a i::before {
   content: "";
   position: absolute;
   top: -38px;
@@ -303,11 +303,11 @@ body section .main-btns a i::before {
   transform: translateX(-50%) skewX(325deg);
   transition: 0.8s;
 }
-body section .main-btns a:hover i::before {
+body section.main-page .main-btns a:hover i::before {
   width: 20px;
   left: 20%;
 }
-body section .main-btns a i::after {
+body section.main-page .main-btns a i::after {
   content: "";
   position: absolute;
   bottom: -11px;
@@ -318,12 +318,12 @@ body section .main-btns a i::after {
   transform: translateX(-50%) skewX(325deg);
   transition: 0.8s;
 }
-body section .main-btns a:hover i::after {
+body section.main-page .main-btns a:hover i::after {
   width: 20px;
   left: 90%;
 }
 @media only screen and (min-width: 768px) {
-  body section .main-btns {
+  body section.main-page .main-btns {
     margin-top: 25vh;
   }
 }
@@ -347,57 +347,60 @@ body section .main-btns a:hover i::after {
     margin-top: 300px;
   }
 }
-section {
+section.technical {
   width: 100vw;
   height: -moz-fit-content;
   height: fit-content;
 }
-section .title {
+section.technical .title {
   display: flex;
   justify-content: center;
 }
-section .title h1 {
+section.technical .title h1 {
   text-align: center;
+  font-size: 40px;
+  font-family: curtive, cursive;
+  color: #E4E4DE;
 }
-section .techcontent {
+section.technical .techcontent {
   width: 100vw;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section .techcontent .HTML {
+section.technical .techcontent .HTML {
   text-align: center;
 }
-section .techcontent .HTML p {
+section.technical .techcontent .HTML p {
   color: #E4E4DE;
 }
-section .techcontent pre {
+section.technical .techcontent pre {
   display: flex;
   justify-content: center;
   width: 100vw;
   overflow: auto;
 }
-section .techcontent .anchors {
+section.technical .techcontent .anchors {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 5vw;
 }
-section .techcontent .SCSS {
+section.technical .techcontent .SCSS {
   margin-top: 100px;
   text-align: center;
 }
-section .techcontent .SCSS p {
+section.technical .techcontent .SCSS p {
   color: #E4E4DE;
 }
-section .techcontent .style-anchors {
+section.technical .techcontent .style-anchors {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 5vw;
 }
-section .techcontent .style-anchors a {
+section.technical .techcontent .style-anchors a {
   width: 120px;
   padding: 10px;
   text-align: center;
@@ -411,10 +414,40 @@ section .techcontent .style-anchors a {
   opacity: 0.8;
   transition: 0.1s;
 }
-section .techcontent .style-anchors a:hover {
+section.technical .techcontent .style-anchors a:hover {
   opacity: 1;
   transform: translate(10px, 10px);
   box-shadow: none;
+}
+section.technical .techcontent .Python {
+  margin-top: 100px;
+  text-align: center;
+}
+section.technical .techcontent .Python p {
+  color: #E4E4DE;
+}
+
+body section.Blogs article {
+  margin: 100px 0px 200px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+}
+body section.Blogs article .blog-post {
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  border: 1px solid #8B6212;
+  box-shadow: 0 0 0 2px #0F2143;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body section.Blogs article .blog-post img {
+  width: 60%;
 }
 
 @keyframes arrow {

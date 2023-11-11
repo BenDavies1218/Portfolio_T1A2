@@ -1,0 +1,15 @@
+@mixin blogs {
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    border: 1px solid $Primary-Gold;
+    box-shadow: 0 0 0 2px $Primary-blue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    img {
+        width: 60%;
+    }
+}

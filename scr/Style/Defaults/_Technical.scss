@@ -1,4 +1,4 @@
-section {
+section.technical {
     width: 100vw;
     height: fit-content;
     
@@ -7,6 +7,9 @@ section {
         justify-content: center;
         h1 {
             text-align: center;
+            font-size: 40px;
+            font-family: curtive, cursive;
+            color: $Secondary-silver;
         }
     }
 
@@ -69,6 +72,14 @@ section {
                     box-shadow: none;
                 }
             }
+        }    
+        .Python {
+            margin-top: 100px;
+            text-align: center;
+            p {
+                color: $Secondary-silver;
+            }
         }
+        
     }
 }

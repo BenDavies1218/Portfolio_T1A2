@@ -1,0 +1,17 @@
+@import "../Components/mixins";
+
+body {
+    section.Blogs {
+        article {
+            margin: 100px 0px 200px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 50px;
+            
+            .blog-post {
+                @include blogs;
+            }
+        }
+    }
+}
