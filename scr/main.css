@@ -347,6 +347,106 @@ body section.main-page .main-btns a:hover i::after {
     margin-top: 300px;
   }
 }
+body section.about-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+body section.about-page .main-content {
+  margin-top: 50px;
+  width: 50vw;
+  text-align: center;
+}
+body section.about-page .main-content img {
+  width: 50%;
+  margin-bottom: 50px;
+}
+body section.about-page .aboutme-content {
+  width: 100vw;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body section.about-page .aboutme-content:nth-child(+1) {
+  align-items: flex-end;
+}
+body section.about-page aside {
+  width: 49vw;
+  text-align: center;
+  color: #E4E4DE;
+  gap: 10px;
+}
+body section.about-page aside p {
+  margin-top: 50px;
+  padding: 20px;
+}
+body section.about-page aside nav.mini {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+}
+body section.about-page aside nav.mini a {
+  font-size: 24px;
+  padding: 0px 10px;
+  font-family: kuvit;
+  color: #E4E4DE;
+  text-decoration: none;
+  background-color: transparent;
+  border-top: transparent;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+@media only screen and (max-width: 768px) {
+  body section.about-page aside nav.mini a {
+    font-size: 12px;
+  }
+}
+body section.about-page aside nav.mini a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+body section.about-page .btt {
+  width: 80vw;
+  height: 50px;
+  color: #E4E4DE;
+  margin-bottom: 50px;
+  text-align: center;
+}
+body section.about-page .btt .back-to-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1vw;
+  color: #1B1B1B;
+  text-decoration: none;
+}
+body section.about-page .btt .back-to-top:hover span {
+  animation-name: arrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+body section.about-page .btt .back-to-top span {
+  font-size: 24px;
+  visibility: hidden;
+}
+body section.about-page .btt a:visited {
+  text-decoration: none;
+  color: #1B1B1B;
+}
+
+@media only screen and (max-width: 768px) {
+  body section.about-page .main-content {
+    width: 100vw;
+  }
+  body section.about-page aside {
+    width: 100vw;
+  }
+}
 section.technical {
   width: 100vw;
   height: -moz-fit-content;
