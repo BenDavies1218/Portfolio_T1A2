@@ -529,6 +529,13 @@ section.technical .techcontent .Python p {
   color: #E4E4DE;
 }
 
+body section.Blogs h1 {
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-size: 32px;
+  color: #E4E4DE;
+}
 body section.Blogs article {
   margin: 100px 0px 200px 0px;
   display: flex;
