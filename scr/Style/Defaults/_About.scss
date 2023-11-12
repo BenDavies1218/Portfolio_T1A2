@@ -2,6 +2,7 @@ body {
     section.about-page {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 50px;
 
         .main-content {
             margin-top: 50px;
@@ -18,10 +19,9 @@ body {
             margin-top: 100px;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-
-            &:nth-child() {
-                align-items: flex-end;
+            align-items: center;
+            & > * {
+                text-align: center;
             }
         }
     

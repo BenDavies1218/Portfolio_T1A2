@@ -153,6 +153,10 @@ body section.main-page .contact-container .Contact-form {
   max-width: 90vw;
   margin: 100px 0px 20px 0px;
 }
+body section.main-page .contact-container .Contact-form h1 {
+  font-size: xx-large;
+  color: #E4E4DE;
+}
 body section.main-page .contact-container .Contact-form * {
   font-size: 16px;
   margin: 10px;
@@ -224,30 +228,27 @@ body section.main-page .article-container article img {
     margin-bottom: 50px;
   }
 }
-body section.main-page .img {
-  margin: 5vw;
-  max-width: 90dvw;
+body section.main-page .heading {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: center;
-}
-@media only screen and (min-width: 768px) {
-  body section.main-page .img {
-    gap: 20vh;
-  }
-}
-body section.main-page h1 {
   text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 10vw;
+}
+body section.main-page .heading img {
+  width: 300px;
+  height: 300px;
+}
+body section.main-page .heading h1 {
   font-size: 32px;
-  max-width: 500px;
-  font-family: Cutive, cursive;
+  width: 40vw;
   color: #E4E4DE;
 }
-body section.main-page h1 p {
-  margin-top: 2vh;
+body section.main-page .heading h1 p {
   font-size: 16px;
-  font-family: kanit, cersive;
+  color: #1B1B1B;
 }
 body section.main-page p {
   text-align: center;
@@ -322,9 +323,9 @@ body section.main-page .main-btns a:hover i::after {
   width: 20px;
   left: 90%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 599px) {
   body section.main-page .main-btns {
-    margin-top: 25vh;
+    margin-top: 15vh;
   }
 }
 
@@ -350,6 +351,7 @@ body section.main-page .main-btns a:hover i::after {
 body section.about-page {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 body section.about-page .main-content {
   margin-top: 50px;
@@ -365,10 +367,10 @@ body section.about-page .aboutme-content {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
-body section.about-page .aboutme-content:nth-child(+1) {
-  align-items: flex-end;
+body section.about-page .aboutme-content > * {
+  text-align: center;
 }
 body section.about-page aside {
   width: 49vw;
@@ -547,7 +549,7 @@ body section.Blogs article .blog-post {
   align-items: center;
 }
 body section.Blogs article .blog-post img {
-  width: 60%;
+  width: 45%;
 }
 
 @keyframes arrow {

@@ -65,6 +65,10 @@ body {
                 width: 400px;
                 max-width: 90vw;
                 margin: 100px 0px 20px 0px;
+                h1 {
+                    font-size: xx-large;
+                    color: $Secondary-silver;
+                }
                 * {
                     font-size: 16px;
                     margin: 10px;
@@ -144,32 +148,28 @@ body {
             }
         }
 
-        .img {
-            margin: 5vw; 
-            max-width: 90dvw;
+        .heading {
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
-            justify-content: center;
-
-            @media only screen and (min-width: 768px) {
-            gap: 20vh;
-            }
-    
-        }
-
-        h1 {
             text-align: center;
-            font-size: 32px;
-            max-width: 500px;
-            font-family: Cutive, cursive;
-            color: $Secondary-silver;
-
-            p {
-                margin-top: 2vh;
-                font-size: 16px;
-                font-family: kanit, cersive;
+            justify-content: center;
+            margin-top: 100px;
+            gap: 10vw;
+            img {
+                width: 300px;
+                height: 300px;
             }
+            h1 {
+                font-size: 32px;
+                width: 40vw;
+                color: $Secondary-silver;
+                p {
+                    font-size: 16px;
+                    color: $Font-black;
+                }
+            }
+            
         }
 
         p {
@@ -257,8 +257,8 @@ body {
                 left: 90%;
             }
         
-        @media only screen and (min-width: 768px) {
-            margin-top: 25vh;
+        @media only screen and (min-width: 599px) {
+            margin-top: 15vh;
             }
 
         }
