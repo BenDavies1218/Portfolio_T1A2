@@ -94,14 +94,14 @@ body {
         }
 
         .article-container {
-            margin-top: 20vh;
+            margin-top: 10vh;
+            width: 100vw;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
 
             article {
-                width: 30vw;
                 text-align: center;
                 margin-bottom: 50px;
                 p {
@@ -152,8 +152,13 @@ body {
             flex-wrap: wrap;
             text-align: center;
             justify-content: center;
-            margin-top: 100px;
+            margin: 10vh 0px 5vh 0px;
             gap: 10vw;
+
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 25vh;
+        }
+        
             img {
                 width: 300px;
                 height: 300px;
@@ -179,7 +184,6 @@ body {
     
         .main-btns {
             background-color: $Primary-Lightblue;
-            margin-bottom: 5vh;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -256,6 +260,10 @@ body {
                 width: 20px;
                 left: 90%;
             }
+
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 20vh;
+        }
         
         @media only screen and (min-width: 768px) {
             margin-top: 15vh;
