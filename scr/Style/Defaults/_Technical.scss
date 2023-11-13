@@ -22,6 +22,7 @@ section.technical {
 
         .HTML {
             text-align: center;
+            max-width: 95vw;
             p {
                 color: $Secondary-silver;
             }
@@ -31,6 +32,10 @@ section.technical {
             justify-content: center;
             width: 100vw;
             overflow: auto;
+        @media only screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+
         }
         .anchors {
             display: flex;
@@ -41,6 +46,7 @@ section.technical {
         .SCSS {
             margin-top: 100px;
             text-align: center;
+            max-width: 95vw;
             p {
                 color: $Secondary-silver;
             }
