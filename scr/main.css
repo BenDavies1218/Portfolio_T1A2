@@ -5,8 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Arvo:ital@0;1&family=Cutive&family=Vast+Shadow&display=swap");
 header {
   width: 100dvw;
-  height: -moz-fit-content;
-  height: fit-content;
   background-color: #43573E;
   border-bottom: 5px solid #8B6212;
 }
@@ -494,7 +492,7 @@ section.technical .techcontent pre {
 }
 @media only screen and (max-width: 768px) {
   section.technical .techcontent pre {
-    font-size: 12px;
+    transform: translate(5vw, 0px);
   }
 }
 section.technical .techcontent .anchors {

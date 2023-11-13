@@ -33,7 +33,7 @@ section.technical {
             width: 100vw;
             overflow: auto;
         @media only screen and (max-width: 768px) {
-            font-size: 12px;
+            transform: translate(5vw, 0px);
         }
 
         }
