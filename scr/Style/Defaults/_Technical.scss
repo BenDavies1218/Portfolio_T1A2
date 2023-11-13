@@ -7,8 +7,8 @@ section.technical {
         justify-content: center;
         h1 {
             text-align: center;
-            font-size: 40px;
-            font-family: curtive, cursive;
+            font-size: 36px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color: $Secondary-silver;
         }
     }
@@ -30,7 +30,11 @@ section.technical {
 
         pre {
             width: 95vw;
-            overflow-x: scroll;
+            overflow: auto;
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
 
         }
         .anchors {

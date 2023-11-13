@@ -466,8 +466,8 @@ section.technical .title {
 }
 section.technical .title h1 {
   text-align: center;
-  font-size: 40px;
-  font-family: curtive, cursive;
+  font-size: 36px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #E4E4DE;
 }
 section.technical .techcontent {
@@ -486,7 +486,13 @@ section.technical .techcontent .HTML p {
 }
 section.technical .techcontent pre {
   width: 95vw;
-  overflow-x: scroll;
+  overflow: auto;
+}
+@media only screen and (min-width: 768px) {
+  section.technical .techcontent pre {
+    display: flex;
+    justify-content: center;
+  }
 }
 section.technical .techcontent .anchors {
   display: flex;
