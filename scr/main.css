@@ -485,15 +485,8 @@ section.technical .techcontent .HTML p {
   color: #E4E4DE;
 }
 section.technical .techcontent pre {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  overflow: auto;
-}
-@media only screen and (max-width: 768px) {
-  section.technical .techcontent pre {
-    transform: translate(5vw, 0px);
-  }
+  width: 95vw;
+  overflow-x: scroll;
 }
 section.technical .techcontent .anchors {
   display: flex;
