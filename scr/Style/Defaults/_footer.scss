@@ -36,6 +36,10 @@ Footer {
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
+            
+            @media only screen and (max-width: 768px) {
+                font-size: 16px;
+            }
 
                 i {
                     transform:scale(1.5);

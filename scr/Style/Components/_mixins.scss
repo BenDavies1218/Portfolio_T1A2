@@ -13,3 +13,8 @@
         width: 45%;
     }
 }
+
+@mixin fontoutline {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}

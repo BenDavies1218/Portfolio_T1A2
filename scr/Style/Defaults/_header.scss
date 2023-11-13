@@ -1,10 +1,9 @@
 @import "../Components/colors";
+@import "../Components/mixins";
 
 header {
     width: 100dvw;
-    height: 100px;
-    padding: 0px;
-    margin: 0px;
+    height: fit-content;
     background-color: $Primary-Green;
     border-bottom: 5px solid $Primary-Gold;
 
@@ -33,9 +32,11 @@ header {
         background-color: $Primary-Green;
         text-align: center;
         h1 {
-            font-family: Nabla, Cursive;
-            padding: 0px;
+            color: $Font-yellow;
+            font-family: Antonio, Cursive;
+            font-size: 44px;
             margin: 10px;
+            @include fontoutline;
         }
     }
     
