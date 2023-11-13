@@ -1,10 +1,7 @@
 html {
     scroll-behavior: smooth;
-    width: 100vw;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
 }
+
 body {
     background-color: $Primary-Lightblue;
     box-sizing: border-box;
@@ -16,10 +13,6 @@ body {
     padding: 0px;
 
     section.main-page {
-        box-sizing: border-box;
-        margin: 0px;
-        padding: 0px;
-
         .btt {
             width: 80vw;
             height: 50px;
@@ -108,6 +101,7 @@ body {
             align-items: center;
 
             article {
+                width: 30vw;
                 text-align: center;
                 margin-bottom: 50px;
                 p {
@@ -165,11 +159,14 @@ body {
                 height: 300px;
             }
             h1 {
-                font-size: 32px;
+                font-size: 36px;
                 width: 40vw;
                 color: $Secondary-silver;
+            @media only screen and (max-width: 768px) {
+                width: 95vw;
+            }
                 p {
-                    font-size: 16px;
+                    font-size: 24px;
                     color: $Font-black;
                 }
             }
@@ -207,7 +204,7 @@ body {
                 box-shadow: 0 0 35px $Secondary-silver;
             }
 
-            a:before {
+            a::before {
             content: '';
                 position: absolute;
                 inset: 2px;
@@ -221,7 +218,6 @@ body {
 
             a i {
                 position: relative;
-                inset: 0;
                 display: block;
             }
 
@@ -261,7 +257,7 @@ body {
                 left: 90%;
             }
         
-        @media only screen and (min-width: 599px) {
+        @media only screen and (min-width: 768px) {
             margin-top: 15vh;
             }
 
