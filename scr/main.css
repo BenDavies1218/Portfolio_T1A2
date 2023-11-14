@@ -150,7 +150,7 @@ body section.main-page .contact-container .Contact-form {
   max-width: 90vw;
   margin: 100px 0px 20px 0px;
 }
-body section.main-page .contact-container .Contact-form h1 {
+body section.main-page .contact-container .Contact-form h2 {
   font-size: xx-large;
   color: #E4E4DE;
 }
@@ -244,17 +244,17 @@ body section.main-page .heading img {
   width: 300px;
   height: 300px;
 }
-body section.main-page .heading h1 {
+body section.main-page .heading h2 {
   font-size: 36px;
   width: 40vw;
   color: #E4E4DE;
 }
 @media only screen and (max-width: 768px) {
-  body section.main-page .heading h1 {
+  body section.main-page .heading h2 {
     width: 95vw;
   }
 }
-body section.main-page .heading h1 p {
+body section.main-page .heading h2 p {
   font-size: 24px;
   color: #1B1B1B;
 }
@@ -546,7 +546,7 @@ section.technical .techcontent .Python p {
   color: #E4E4DE;
 }
 
-body section.Blogs h1 {
+body section.Blogs h2 {
   text-align: center;
   margin-top: 50px;
   text-decoration: underline;
