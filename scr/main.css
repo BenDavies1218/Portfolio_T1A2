@@ -563,7 +563,7 @@ body section.Blogs article {
 body section.Blogs article .blog-post {
   text-align: center;
   width: 300px;
-  height: 500px;
+  height: auto;
   border: 1px solid #8B6212;
   box-shadow: 0 0 0 2px #0F2143;
   display: flex;
