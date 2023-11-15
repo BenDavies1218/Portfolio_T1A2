@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-15T00:50:29.677Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="kTap8BCdpwRm_-1tyeu-" version="22.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-15T00:54:20.151Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="EKOHnfpIAOKyCFHp8Vll" version="22.1.1" type="github">
   <diagram name="Page-1" id="KgpxVXigs59258O4dVcj">
     <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -14,7 +14,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Shge1h-AJ0qM2_w3c1ry-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Shge1h-AJ0qM2_w3c1ry-1" target="Shge1h-AJ0qM2_w3c1ry-6">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="100" />
+              <mxPoint x="320" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Shge1h-AJ0qM2_w3c1ry-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Shge1h-AJ0qM2_w3c1ry-1" target="Shge1h-AJ0qM2_w3c1ry-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="130" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="Shge1h-AJ0qM2_w3c1ry-1" value="Home Page" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="365" y="80" width="120" height="60" as="geometry" />
@@ -52,7 +64,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Shge1h-AJ0qM2_w3c1ry-6" value="Contact" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="150" y="60" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Shge1h-AJ0qM2_w3c1ry-14" value="Details about me" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="710" y="280" width="120" height="60" as="geometry" />
@@ -67,7 +79,18 @@
           <mxGeometry x="290" y="280" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Shge1h-AJ0qM2_w3c1ry-24" value="Located on home page simple form with button" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="180" width="120" height="60" as="geometry" />
+          <mxGeometry x="10" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Shge1h-AJ0qM2_w3c1ry-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Shge1h-AJ0qM2_w3c1ry-25" target="Shge1h-AJ0qM2_w3c1ry-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Shge1h-AJ0qM2_w3c1ry-25" value="Footer &amp;amp; Header" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Shge1h-AJ0qM2_w3c1ry-29" value="Social Media Links" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="280" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
