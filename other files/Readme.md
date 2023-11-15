@@ -5,12 +5,12 @@
 [My Video Presentation]()
 
 ## Purpose <br>
-- My Portfolio website is a demonstation of my skills with HTML and CSS, it demonstates how I can write effiecent and clean code to engage a prospectful employer or client. 
+- My Portfolio website is a demonstation of my skills with HTML and CSS, it demonstates how I can write efficient and clean code to engage a prospectful employer or client. 
 
 ## Functionality / features <br>
 1. The website is a fully responsive design and will change the layout of the scale of components depending on the screen width.
 
-2. The website includes various transitions, animations, Psuedo classes and elements that makes it interactive and engages the viewer.
+2. The website includes various transitions, animations, Psuedo classes and Psuedo elements that makes it interactive and engages the viewer.
 
 3. The main Feature of the home page is the Download Button and Lets have a chat button, these button are both styled the same. Kevin Powell does a great tutorial on [::Before and ::After Psuedo elements](https://www.youtube.com/watch?v=zGiirUiWslI) and thats how I achieved this design. 
 
@@ -20,12 +20,38 @@
 
 ## Sitemap
 ![My Sitemap](./Sitemap_plan.drawio.png)
+![Code Plan](./Sitemap_code.drawio.png)
 
 
 ## Screenshots
+Home Page
+![Home Page](./homepage.png)
+Contact Form and Footer
+![Footer](./Footer%20and%20Contact%20form.png)
+About me Page
+![About Me](./About%20page.png)
+Technical Page
+![Technical Page](./Technical%20page.png)
+Blog Page
+![Blog Page](./blog%20page.png)
+
 
 
 ## Target audience
-
+- This website is targeted at a Prospectful employer or Client. 
 
 ## Tech stack (e.g. html, css, deployment platform, etc
+### This Website utilizes:
+- HTML
+  - Semantic Elements
+- SCSS
+  - Mixins
+  - Variables
+  - Imports
+- CSS
+  - Transitions
+  - Animations
+  - Flexbox
+  - Media Queries
+- It is Stored on github
+- It has been deployed by Netlify 
