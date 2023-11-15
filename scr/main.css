@@ -380,8 +380,12 @@ body section.about-page .aboutme-content {
   flex-direction: column;
   align-items: center;
 }
-body section.about-page .aboutme-content > * {
+body section.about-page .aboutme-content > ol {
+  width: 5vw;
+}
+body section.about-page .aboutme-content > p {
   text-align: center;
+  width: 40vw;
 }
 body section.about-page aside {
   width: 45vw;
