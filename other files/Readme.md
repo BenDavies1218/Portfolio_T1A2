@@ -19,21 +19,21 @@
 5. The experience page displays my preformated code and gives a Graphical representation of my expertises and knowledge of Markup Lanuages and programming. 
 
 ## Sitemap
-![My Sitemap](./Sitemap_plan.drawio.png)
-![Code Plan](./Sitemap_code.drawio.png)
+![My Sitemap](./docs/Sitemap_plan.drawio.png)
+![Code Plan](./docs/Sitemap_code.drawio.png)
 
 
 ## Screenshots
 Home Page
-![Home Page](./homepage.png)
+![Home Page](./docs/homepage.png)
 Contact Form and Footer
-![Footer](./Footer%20and%20Contact%20form.png)
+![Footer](./docs/Footer%20and%20Contact%20form.png)
 About me Page
-![About Me](./About%20page.png)
+![About Me](./docs/About%20page.png)
 Technical Page
-![Technical Page](./Technical%20page.png)
+![Technical Page](./docs/Technical%20page.png)
 Blog Page
-![Blog Page](./blog%20page.png)
+![Blog Page](./docs/blog%20page.png)
 
 
 
