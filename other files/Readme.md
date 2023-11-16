@@ -2,7 +2,7 @@
 
 [My Portfolio Github Repository](https://github.com/BenDavies1218/Portfolio_T1A2)
 
-[My Video Presentation]()
+[My Video Presentation](https://vimeo.com/885099352?share=copy#t=0)
 
 ## Purpose <br>
 - My Portfolio website is a demonstation of my skills with HTML and CSS, it demonstates how I can write efficient and clean code to engage a prospectful employer or client. 
@@ -42,7 +42,9 @@ Blog Page
 
 ## Tech stack (e.g. html, css, deployment platform, etc
 ### This Website utilizes:
-- HTML
+- Draw.io to plan the sitemaps 
+- Figma to create the Wireframes
+- HTML 5
   - Semantic Elements
 - SCSS
   - Mixins
