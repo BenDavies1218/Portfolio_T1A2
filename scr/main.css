@@ -500,12 +500,14 @@ section.technical .title h1 {
   font-size: 36px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #E4E4DE;
+  margin: 50px;
 }
 section.technical .techcontent {
   width: 100vw;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 section.technical .techcontent .HTML {
   text-align: center;
@@ -545,7 +547,7 @@ section.technical .techcontent .style-anchors {
   gap: 5vw;
 }
 section.technical .techcontent .style-anchors a {
-  width: 120px;
+  width: 150px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
