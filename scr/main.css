@@ -99,11 +99,16 @@ Footer .container .social-links a i {
 html {
   scroll-behavior: smooth;
 }
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: #354E56;
   box-sizing: border-box;
-  max-width: 100dvw;
+  max-width: 100vw;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -192,6 +197,7 @@ body section.main-page .article-container article {
 body section.main-page .article-container article p {
   color: #E4E4DE;
   font-size: 24px;
+  margin-bottom: 50px;
 }
 body section.main-page .article-container article a {
   position: relative;
@@ -215,6 +221,7 @@ body section.main-page .article-container article a:hover {
 body section.main-page .article-container article h3 {
   color: #E4E4DE;
   font-size: 32px;
+  margin-bottom: 20px;
 }
 body section.main-page .article-container article img {
   max-width: 250px;
@@ -379,6 +386,15 @@ body section.about-page .aboutme-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 50px;
+}
+body section.about-page .aboutme-content img {
+  max-width: 350px;
+}
+@media only screen and (min-width: 768px) {
+  body section.about-page .aboutme-content img {
+    width: 30%;
+  }
 }
 body section.about-page .aboutme-content > ol {
   width: 5vw;
@@ -386,6 +402,12 @@ body section.about-page .aboutme-content > ol {
 body section.about-page .aboutme-content > p {
   text-align: center;
   width: 40vw;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 1050px) {
+  body section.about-page .aboutme-content > p {
+    width: 80vw;
+  }
 }
 body section.about-page aside {
   width: 45vw;
@@ -484,7 +506,6 @@ section.technical .techcontent {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 section.technical .techcontent .HTML {
   text-align: center;
